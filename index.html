@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo de recibos de sueldo</title>
+    <link rel="stylesheet" href="css/estilo.css"> <!-- Conexión con el archivo .css -->
+    <script type="text/javascript" src="js/funciones.js"></script><!-- Archivo javascript -->
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenido a la página para calcular tu recibo de sueldo</h1>
+    </header>
+
+    <section>
+        <h2>Calculo de pago de haberes</h2>
+        <form name="informacion" onsubmit="return calcularResultados()">
+            <p>Ingresa tu sueldo básico:</p>
+            <input type="number" id="sueldo_basico" placeholder="Sueldo básico" required>
+
+            <p>Ingresa tu antigüedad:</p>
+            <input type="number" id="antiguedad" placeholder="Antigüedad" required>
+
+            <p>Ingresa la cantidad de horas de asamblea:</p>
+            <input type="number" id="horas_asamblea" placeholder="Horas de asamblea" required>
+
+            <p>Ingresa la cantidad de horas extras al 100%:</p>
+            <input type="number" id="horas_100" placeholder="Horas al 100%" required>
+
+            <p>Ingresa la cantidad de horas extras al 50%:</p>
+            <input type="number" id="horas_50" placeholder="Horas al 50%" required>
+
+            <p>Si ya completaste todas las casillas, presiona enviar:</p>
+            <input type="submit" id="enviar" value="ENVIAR">
+        </form>
+    </section>
+
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <p id="resultado_sueldo">Sueldo Básico: </p>
+        <p id="resultado_antiguedad">Antigüedad: </p>
+        <p id="resultado_asamblea">Horas de Asamblea: </p>
+        <p id="resultado_horas_100">Horas Extras al 100%: </p>
+        <p id="resultado_horas_50">Horas Extras al 50%: </p>
+    </section>
+
+    <section id="total de sueldo a cobrar">
+        <h2>Total de sueldo a cobrar</h2>
+        <p id="resultado_total">Total: </p>
+        
+    </section>
+
+    <footer>
+        <h6>© 2024 » Recibos de sueldo » Diseño elaborado por Carina G Aliendro</h6>
+    </footer>
+
+</body>
+</html>
